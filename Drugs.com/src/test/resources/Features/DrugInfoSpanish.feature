@@ -1,3 +1,4 @@
+@regression
 Feature:  Drug info in spanish feature 
 
 Scenario: As a user I want to see drug info in spansih

@@ -1,3 +1,4 @@
+@regression
 Feature: SignIn feature validation
 
  Scenario Outline: User is unable to SignIn

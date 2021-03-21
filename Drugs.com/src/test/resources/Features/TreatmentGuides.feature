@@ -1,3 +1,4 @@
+@regression
 Feature:  Treatment Guides search feature 
 
 Scenario: As a user I want to search Treatment Guides 

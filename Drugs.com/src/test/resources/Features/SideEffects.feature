@@ -1,3 +1,4 @@
+@regression
 Feature:  Side Effects search feature
 
 Scenario: As a user I want to search Side Effects 

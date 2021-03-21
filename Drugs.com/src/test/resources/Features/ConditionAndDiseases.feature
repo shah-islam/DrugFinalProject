@@ -1,3 +1,4 @@
+@regression
 Feature:  Disease and condition search feature 
 
 Scenario: As a user I want to search disease and condition 

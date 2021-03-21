@@ -1,3 +1,4 @@
+@regression
 Feature:  Search Filter validation 
 
 Scenario: As a user I want to see the image of a specific drug

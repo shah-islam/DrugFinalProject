@@ -9,8 +9,8 @@ import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features = { "src/test/resources/FeatureFiles" }, glue = { "StepDef",
-		"Utilities" }, tags = { "" }, plugin = { "pretty", "html:target/cucumber-htmlreport",
+@CucumberOptions(features = { "src/test/resources/Features" }, glue = { "StepDef",
+		"Utilities" }, tags = { "@regression" }, plugin = { "pretty", "html:target/cucumber-htmlreport",
 				"json:target/cucumber-report.json",
 				"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" }, monochrome = true)
 
@@ -22,4 +22,7 @@ public class DrugsRunner extends AbstractTestNGCucumberTests {
 
 	}
 
-}
+} 
+
+
+

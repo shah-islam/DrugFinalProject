@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 14 00:26:36 EST 2021</td>
+<td>Started on:</td><td>Sun Mar 14 11:09:17 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (48 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (492 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,27 +75,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Runner.DrugsRunner$RunCucumberTest.setUpClass()'><b>setUpClass</b><br>Test class: Runner.DrugsRunner$RunCucumberTest</td>
-<td><div><pre>cucumber.runtime.CucumberException: Couldn&apos;t load plugin class: com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter
-	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:175)
-	at cucumber.runtime.formatter.PluginFactory.pluginClass(PluginFactory.java:165)
-	at cucumber.runtime.formatter.PluginFactory.getPluginClass(PluginFactory.java:226)
-	at cucumber.runtime.formatter.PluginFactory.isFormatterName(PluginFactory.java:195)
-	at cucumber.runtime.RuntimeOptionsFactory.addPlugins(RuntimeOptionsFactory.java:89)
-	at cucumber.runtime.RuntimeOptionsFactory.buildArgsFromOptions(RuntimeOptionsFactory.java:37)
-	at cucumber.runtime.RuntimeOptionsFactory.create(RuntimeOptionsFactory.java:24)
-	at cucumber.api.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:37)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+<td title='Runner.DrugsRunner.writeExtentReport()'><b>writeExtentReport</b><br>Test class: Runner.DrugsRunner</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(java.io.File)&quot; because the return value of &quot;com.cucumber.listener.Reporter.getExtentHtmlReport()&quot; is null
+	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+	at Runner.DrugsRunner.writeExtentReport(DrugsRunner.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -110,34 +103,20 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:173)
-	... 32 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace106374177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace106374177'><pre>cucumber.runtime.CucumberException: Couldn&apos;t load plugin class: com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter
-	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:175)
-	at cucumber.runtime.formatter.PluginFactory.pluginClass(PluginFactory.java:165)
-	at cucumber.runtime.formatter.PluginFactory.getPluginClass(PluginFactory.java:226)
-	at cucumber.runtime.formatter.PluginFactory.isFormatterName(PluginFactory.java:195)
-	at cucumber.runtime.RuntimeOptionsFactory.addPlugins(RuntimeOptionsFactory.java:89)
-	at cucumber.runtime.RuntimeOptionsFactory.buildArgsFromOptions(RuntimeOptionsFactory.java:37)
-	at cucumber.runtime.RuntimeOptionsFactory.create(RuntimeOptionsFactory.java:24)
-	at cucumber.api.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:37)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+</pre></div><a href='#' onClick='toggleBox("stack-trace925803196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace925803196'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(java.io.File)&quot; because the return value of &quot;com.cucumber.listener.Reporter.getExtentHtmlReport()&quot; is null
+	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+	at Runner.DrugsRunner.writeExtentReport(DrugsRunner.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -152,16 +131,9 @@ Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.cucumb
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:173)
-	... 32 more
 </pre></div></td>
 <td>0</td>
-<td>Runner.DrugsRunner$RunCucumberTest@63021689</td></tr>
+<td>Runner.DrugsRunner@563e4951</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -171,15 +143,10 @@ Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.cucumb
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Runner.DrugsRunner$RunCucumberTest.setup()'><b>setup</b><br>Test class: Runner.DrugsRunner$RunCucumberTest</td>
+<td title='Runner.DrugsRunner.tearDownClass()'><b>tearDownClass</b><br>Test class: Runner.DrugsRunner</td>
 <td></td>
 <td>0</td>
-<td>Runner.DrugsRunner$RunCucumberTest@63021689</td></tr>
-<tr>
-<td title='Runner.DrugsRunner$RunCucumberTest.tearDownClass()'><b>tearDownClass</b><br>Test class: Runner.DrugsRunner$RunCucumberTest</td>
-<td></td>
-<td>0</td>
-<td>Runner.DrugsRunner$RunCucumberTest@63021689</td></tr>
+<td>Runner.DrugsRunner@563e4951</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -189,8 +156,8 @@ Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.cucumb
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Runner.DrugsRunner$RunCucumberTest.feature()'><b>feature</b><br>Test class: Runner.DrugsRunner$RunCucumberTest<br>Test method: Runs Cucumber Feature</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
+<td title='Runner.DrugsRunner.feature()'><b>feature</b><br>Test class: Runner.DrugsRunner<br>Test method: Runs Cucumber Feature</td>
+<td><div><pre>java.lang.RuntimeException: gherkin.TagExpression$BadTagException: Bad tag: &quot;&quot;
 	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:143)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
@@ -212,17 +179,30 @@ Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.cucumb
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
+Caused by: gherkin.TagExpression$BadTagException: Bad tag: &quot;&quot;
+	at gherkin.TagExpression$TagExp.&lt;init&gt;(TagExpression.java:122)
+	at gherkin.TagExpression.add(TagExpression.java:57)
+	at gherkin.TagExpression.&lt;init&gt;(TagExpression.java:17)
+	at gherkin.formatter.TagFilter.&lt;init&gt;(TagFilter.java:14)
+	at gherkin.formatter.FilterFormatter.detectFilter(FilterFormatter.java:64)
+	at gherkin.formatter.FilterFormatter.&lt;init&gt;(FilterFormatter.java:41)
+	at cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:126)
+	at cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:104)
+	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:54)
+	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:34)
+	at cucumber.runtime.RuntimeOptions.cucumberFeatures(RuntimeOptions.java:235)
+	at cucumber.api.testng.TestNGCucumberRunner.getFeatures(TestNGCucumberRunner.java:85)
+	at cucumber.api.testng.TestNGCucumberRunner.provideFeatures(TestNGCucumberRunner.java:93)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.features(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:117)
 	... 20 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace150268540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace150268540'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1827303532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1827303532'><pre>java.lang.RuntimeException: gherkin.TagExpression$BadTagException: Bad tag: &quot;&quot;
 	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:143)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
@@ -244,18 +224,31 @@ Caused by: java.lang.NullPointerException
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
+Caused by: gherkin.TagExpression$BadTagException: Bad tag: &quot;&quot;
+	at gherkin.TagExpression$TagExp.&lt;init&gt;(TagExpression.java:122)
+	at gherkin.TagExpression.add(TagExpression.java:57)
+	at gherkin.TagExpression.&lt;init&gt;(TagExpression.java:17)
+	at gherkin.formatter.TagFilter.&lt;init&gt;(TagFilter.java:14)
+	at gherkin.formatter.FilterFormatter.detectFilter(FilterFormatter.java:64)
+	at gherkin.formatter.FilterFormatter.&lt;init&gt;(FilterFormatter.java:41)
+	at cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:126)
+	at cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:104)
+	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:54)
+	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:34)
+	at cucumber.runtime.RuntimeOptions.cucumberFeatures(RuntimeOptions.java:235)
+	at cucumber.api.testng.TestNGCucumberRunner.getFeatures(TestNGCucumberRunner.java:85)
+	at cucumber.api.testng.TestNGCucumberRunner.provideFeatures(TestNGCucumberRunner.java:93)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.features(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:117)
 	... 20 more
 </pre></div></td>
 <td>0</td>
-<td>Runner.DrugsRunner$RunCucumberTest@63021689</td></tr>
+<td>Runner.DrugsRunner@563e4951</td></tr>
 </table><p>
 </body>
 </html>

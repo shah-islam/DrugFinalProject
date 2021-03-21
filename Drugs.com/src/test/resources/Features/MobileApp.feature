@@ -1,3 +1,4 @@
+@regression
 Feature: Mobile App Validation
 
 Scenario: As a user I want to download option for Mobile Apps

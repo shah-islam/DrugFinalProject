@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Utilities.AfterActions"/>
-      <class name="Utilities.BeforeActions"/>
+      <class name="runner.drugsrunner"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

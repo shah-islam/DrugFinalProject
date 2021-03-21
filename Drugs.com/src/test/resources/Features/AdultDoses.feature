@@ -1,3 +1,4 @@
+@regression
 Feature:  Dosage Guidelines feature validation 
 
 Scenario: As a user I want to see all the adult doses for motion sickness
